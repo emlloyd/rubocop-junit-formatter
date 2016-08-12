@@ -1,4 +1,5 @@
 require 'rexml/document'
+require 'rubocop'
 
 module RuboCop
   module Formatter
