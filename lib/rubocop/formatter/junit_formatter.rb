@@ -20,8 +20,6 @@ module RuboCop
       end
 
       def file_finished(file, offences)
-        return if offences.empty?
-
         # One test case per cop per file
         COPS.each do |cop|
           REXML::Element.new('testcase', @testsuite).tap do |f|
